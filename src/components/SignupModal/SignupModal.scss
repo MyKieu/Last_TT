@@ -1,0 +1,91 @@
+@import 'src/scss/utils/variable';
+
+.signup {
+    padding: 56px 0px 30px;
+
+    .signup-title {
+        line-height: 24px;
+
+        margin-bottom: 9px;
+    }
+
+    .signup-greeting {
+        font-weight: 700;
+        line-height: 34px;
+
+        margin-bottom: 24px;
+    }
+
+    .signup-form {
+        padding: 0px 108px;
+        .signup-label {
+            line-height: 24px;
+
+            &:not(:first-of-type) {
+                margin-top: 30px;
+            }
+        }
+        .signup-input {
+            border: none;
+            border-bottom: 1px solid $cl_nero;
+
+            padding-bottom: 10px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $cl_dark_gray_1;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        .signup-btn {
+            line-height: 20px;
+
+            min-height: 40px;
+            min-width: 230px;
+            margin: 30px 0px 32px;
+
+            background-color: $cl_yuma;
+            border: none;
+
+            transition: all 0.35s ease 0s;
+
+            &:hover {
+                background-color: $cl_gimblet;
+            }
+        }
+    }
+
+    .signup-login {
+        .signup-login-btn {
+            border: none;
+            background-color: transparent;
+
+            font-weight: 500;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .signup {
+        .signup-form {
+            padding: 0px 100px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .signup {
+        .signup-form {
+            padding: 0px 25px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.oclt {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    .oclt-title {
+        line-height: 24px;
+        margin-bottom: 38px;
+    }
+    .oclt-subtitle {
+        line-height: 60px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
+    .octl-slide {
+        .octl-slide-item {
+            .octl-slide-item-bg {
+                min-width: 100%;
+                min-height: 570px;
+                padding-bottom: 72px;
+
+                background-image: url(../../assets/img/home/bag_bg.png);
+                .octl-slide-item-img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .octl-nav {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        &--prev {
+            left: 10px;
+        }
+        &--next {
+            right: 10px;
+        }
+    }
+}

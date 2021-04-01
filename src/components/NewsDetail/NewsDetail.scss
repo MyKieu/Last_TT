@@ -1,0 +1,17 @@
+.news-detail {
+  .news-detail-header, .f-text, .s-text {
+    @media(max-width: 992px) {
+      width: 80% !important;
+    }
+
+    @media(max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+
+  .bag-in-daily-list_item {
+    &:last-child {
+      margin-bottom: 0px !important;
+    }
+  }
+}

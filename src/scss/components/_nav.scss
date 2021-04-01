@@ -1,0 +1,12 @@
+.link-active {
+    position: relative;
+    & > div {
+        content: '';
+        bottom: -6px;
+        left: 0;
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: $cl_nero;
+    }
+}

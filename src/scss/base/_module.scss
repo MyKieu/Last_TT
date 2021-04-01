@@ -1,0 +1,15 @@
+@import 'font-size';
+@import 'reset';
+@import 'typography';
+@import 'color';
+@import 'space';
+@import 'btn';
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.disabled-half {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+}

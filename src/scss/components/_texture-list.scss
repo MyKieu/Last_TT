@@ -1,0 +1,61 @@
+@import '../../scss/utils/variable';
+
+.texture-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    div[class^='col-'] {
+        padding: 10px;
+    }
+    .texture-item-wrapper {
+        border: 1px solid transparent;
+        .texture-item {
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 70px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            & > div {
+                z-index: 1;
+            }
+        }
+        &.active {
+            border-color: $cl_yuma;
+        }
+    }
+}
+
+.color-list-container {
+    margin-left: -10px;
+    margin-right: -10px;
+    div[class^='col-'] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .color-item-wrapper {
+        .color-item {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+
+            &.active {
+                border-color: $cl_yuma;
+            }
+
+            .color {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+        .name {
+            opacity: 0;
+        }
+    }
+}

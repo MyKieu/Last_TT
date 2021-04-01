@@ -1,0 +1,21 @@
+export { default as Home } from './Home/Home';
+export { default as NewsLetter } from './NewsLetter/NewsLetter';
+export { default as MyOrders } from './MyOrders/MyOrders';
+export { default as Profile } from './Profile/Profile';
+export { default as Bags } from './Bags/Bags';
+export { default as BagDetails } from './Bags/BagDetails/BagDetails';
+export { default as ScrollToTop } from './ScrollToTop/ScrollToTop';
+export { default as News } from './News/News';
+export { default as NewsDetail } from './NewsDetail/NewsDetail';
+export { default as Collection } from './Collection/Collection';
+export { default as CollectionDetail } from './CollectionDetail/CollectionDetail';
+export { default as OurStory } from './OurStory/OurStory';
+export { default as Contact } from './Contact/Contact';
+export { default as DesignYourOwn } from './DesignYourOwn/DesignYourOwn';
+export { default as DesignDetails } from './DesignYourOwn/DesignDetails/DesignDetails';
+export { default as DesignCustomize } from './DesignYourOwn/DesignCustomize/DesignCustomize';
+export { default as Cart } from './Cart/Cart';
+export { default as Checkout } from './Checkout/Checkout';
+export { default as LoginModal } from './LoginModal/LoginModal';
+export { default as SignupModal } from './SignupModal/SignupModal';
+

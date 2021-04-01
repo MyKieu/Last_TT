@@ -1,0 +1,60 @@
+@import 'src/scss/utils/variable';
+
+.collection {
+    .collection-content {
+        &--one {
+            top: 0px;
+        }
+        &--two {
+            top: 0px;
+        }
+        &--three {
+            top: 0px;
+        }
+        .collection-title {
+            margin-top: 30px;
+            line-height: 60px;
+            font-weight: 700;
+        }
+        .collection-subtitle {
+            line-height: 20px;
+        }
+        .collection-btn {
+            border: none;
+            background-color: $cl_yuma;
+
+            display: inline-block;
+            height: 40px;
+            min-width: 164px;
+            padding-top: 10px;
+
+            transition: all 0.35s ease 0s;
+            &:hover {
+                background-color: $cl_gimblet;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .collection {
+        .row {
+            padding-top: 80px;
+            .collection-content {
+                max-width: 482px;
+                &--one {
+                    top: 100px;
+                }
+                &--two {
+                    top: 60px;
+                }
+                &--three {
+                    top: 90px;
+                }
+                .collection-title {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}

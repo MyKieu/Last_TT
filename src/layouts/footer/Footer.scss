@@ -1,0 +1,51 @@
+@import 'src/scss/utils/variable';
+
+
+.footer {
+  background-color: $cl_nero;
+
+  &-wrapper {
+    .footer_logo {
+      @media (max-width: 992px) {
+        width: 100%;
+        margin-bottom: 60px;
+      }
+
+      &-text {
+        line-height: 18px;
+        cursor: default;
+      }
+    }
+
+    .footer_nav {
+      &-title {
+        line-height: 20px;
+      }
+      &-item {
+        color: $cl_dark_gray_1 !important;
+        line-height: 20px;
+      }
+    }
+
+    .footer_support {
+      &-title {
+        line-height: 20px;
+      }
+      &-item {
+        color: $cl_dark_gray_1 !important;
+        line-height: 20px;
+      }
+    }
+
+    .footer_social {
+      &-title {
+        line-height: 20px;
+      }
+    }
+  }
+
+  &_copy-right {
+    color: $cl_dark_gray_1 !important;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,11 @@
+$sizes: 12, 14, 15, 16, 17, 18, 24, 25, 31, 38, 48, 50, 60, 200;
+
+@each $size in $sizes {
+    .size-#{$size} {
+        font-size: ($size / 16) * 1rem;
+    }
+}
+
+.line-normal {
+    line-height: 1.2;
+}

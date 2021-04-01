@@ -1,0 +1,18 @@
+@import '../../scss/utils/variable';
+
+.review-img {
+    max-height: calc(100vh - 250px);
+    overflow: scroll;
+    .review-img-item {
+        background-color: $cl_snow_1;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        margin-top: 10px;
+        &:first-child {
+            margin-top: 0;
+        }
+        img {
+            height: 30%;
+        }
+    }
+}

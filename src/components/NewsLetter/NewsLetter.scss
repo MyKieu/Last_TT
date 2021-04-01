@@ -1,0 +1,43 @@
+@import 'src/scss/utils/variable';
+
+.news-letter {
+    background-color: $cl_snow_1;
+
+    .news-letter-subtitle {
+        font-size: 36px;
+    }
+
+    .news-letter-form {
+        min-width: 474px;
+        min-height: 50px;
+
+        @media (max-width: 575.98px) {
+            min-width: 300px;
+        }
+
+        input {
+            border: 1px solid $cl_nero;
+            height: 50px;
+            padding: 0px 148px 0px 18px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .news-letter-btn {
+            top: 1px;
+            right: 1px;
+
+            border: none;
+            background-color: $cl_yuma;
+
+            min-height: 48px;
+            min-width: 130px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

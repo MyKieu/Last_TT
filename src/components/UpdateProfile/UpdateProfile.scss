@@ -1,0 +1,101 @@
+@import 'src/scss/utils/variable';
+
+.updateprofile {
+    padding: 200px 0px 78px;
+    .updateprofile-container {
+        .updateprofile-title {
+            margin-bottom: 30px;
+            line-height: 24px;
+            cursor: default;
+        }
+        .updateprofile-subtitle {
+            margin-bottom: 62px;
+            line-height: 60px;
+            cursor: default;
+        }
+        .up-main {
+            .up-img-container {
+                width: 67px;
+                height: 67px;
+                margin-right: 63px;
+                .up-update-btn {
+                    cursor: pointer;
+                    top: 0px;
+                    right: 0px;
+
+                    width: 30px;
+                }
+            }
+            .up-form-container {
+                .up-form {
+                    min-width: 383px;
+                    .up-field-container {
+                        margin-bottom: 30px;
+
+                        .up-label {
+                            margin-bottom: 12px;
+                        }
+                        .up-input {
+                            border: none;
+                            border-bottom: 1px solid $cl_nero;
+
+                            line-height: 24px;
+                            padding-bottom: 10px;
+
+                            &:focus {
+                                outline: none;
+                            }
+
+                            &::placeholder {
+                                font-size: 16px;
+                                color: $cl_dark_gray_1;
+                                text-transform: capitalize;
+                            }
+
+                            &:not(:first-of-type) {
+                                margin-top: 36px;
+                            }
+                        }
+                        .up-change-pw-btn {
+                            right: 0px;
+                            bottom: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    .up-btn-container {
+                        margin-top: 68px;
+                        .up-btn {
+                            border: none;
+                            background-color: $cl_yuma;
+
+                            min-width: 230px;
+                            min-height: 40px;
+
+                            transition: all 0.35s ease 0s;
+
+                            &:hover {
+                                background-color: $cl_gimblet;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .updateprofile {
+        .updateprofile-container {
+            .up-main {
+                width: 90%;
+                .up-form-container {
+                    width: 100%;
+                    .up-form {
+                        min-width: unset;
+                    }
+                }
+            }
+        }
+    }
+}

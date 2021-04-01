@@ -1,0 +1,16 @@
+.review-img-dialog {
+    padding: 0 !important;
+    .ant-modal-content {
+        height: 100%;
+        .ant-modal-body {
+            height: 100%;
+            padding: 50px 0 20px 0;
+            .scrollbar-container {
+                padding: 0 80px;
+                img {
+                    min-width: 500px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import 'src/scss/utils/variable';
+
+.bag-details {
+    .color-list {
+        .color-item-wrapper {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            margin-left: 30px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                border-color: $cl_yuma;
+            }
+            .color-item {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .choose-style {
+        .label {
+            width: 100px;
+        }
+        .btn-open-more {
+            height: 50px;
+            min-width: 170px;
+            padding: 0 !important;
+        }
+    }
+    .right-col {
+        max-width: 600px;
+    }
+    .details {
+        .collapse-icon {
+            transition: 0.5s all;
+        }
+        .ant-collapse-header {
+            padding: 0 !important;
+        }
+        .ant-collapse-content-box {
+            padding: 0 !important;
+        }
+        .ant-collapse-item-active {
+            .collapse-icon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .banner-session {
+        min-height: 400px;
+        background: url('../../../assets/img/bag-page/banner-bag.png') no-repeat center;
+        background-size: cover;
+    }
+    .bag-slide {
+        .bag-slide-item {
+            background-color: $cl_snow_1;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 360px;
+            img {
+                width: 60%;
+            }
+        }
+        .content {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    .btn-prev-wrapper {
+        left: 30px;
+    }
+    .btn-next-wrapper {
+        right: 30px;
+    }
+    .btn-prev-wrapper,
+    .btn-next-wrapper {
+        top: 0;
+        z-index: 1;
+        height: 360px;
+    }
+}

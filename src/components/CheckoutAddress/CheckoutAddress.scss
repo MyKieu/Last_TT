@@ -1,0 +1,68 @@
+@import 'src/scss/utils/variable';
+
+.ca {
+    .ca-main {
+        max-width: 640px;
+        margin: auto;
+        padding: 46px 50px 58px;
+
+        @media (max-width: 575.98px) {
+            padding: 46px 20px 58px;
+        }
+
+        border: 1px solid $cl_whisper;
+
+        .ca-title {
+            font-weight: 700;
+            line-height: 34px;
+
+            margin-bottom: 20px;
+        }
+
+        .ca-form {
+            .field-container {
+                &:not(:first-of-type) {
+                    margin-top: 30px;
+                }
+
+                .ca-input {
+                    border: none;
+                    border-bottom: 1px solid $cl_nero;
+
+                    padding-bottom: 10px;
+
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: $cl_dark_gray_1;
+                    }
+                }
+
+                img {
+                    top: 43px;
+                    right: 10px;
+                }
+            }
+
+            .ca-btn {
+                background-color: $cl_nero;
+                border: none;
+
+                min-height: 40px;
+                min-width: 280px;
+
+                margin-top: 60px;
+
+                @media (max-width: 575.98px) {
+                    min-width: 220px;
+                }
+            }
+        }
+    }
+}

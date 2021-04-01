@@ -1,0 +1,53 @@
+@import '../../scss/utils/variable';
+
+.cart {
+    .cart-item-wrapper {
+        border-bottom: 1px solid $cl_whisper;
+
+        .cart-item {
+            .input-quantity {
+                height: 30px !important;
+            }
+
+            .btn-control {
+                height: 30px;
+                width: 30px;
+
+                img {
+                    width: 15px;
+                }
+            }
+
+            .cart-item-img {
+                top: 0;
+                left: 0;
+
+                img {
+                    max-width: 70%;
+                    max-height: 70%;
+                }
+            }
+
+            .btn-wrapper {
+                .btn-delete {
+                    padding-right: 20px;
+                    border-right: 1px solid $cl_dark_gray_1;
+                }
+
+                .btn-customize {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .resume-cart {
+        background-color: $cl_snow_1;
+        padding: 40px 50px 100px 50px;
+        .btn-checkout {
+            height: 40px;
+            background-color: $cl_black;
+        }
+    }
+}

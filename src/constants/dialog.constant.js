@@ -1,0 +1,7 @@
+const DIALOG_CONST = {
+    OPEN_DIALOG: 'OPEN_DIALOG',
+    CLOSE_DIALOG: 'CLOSE_DIALOG',
+    SET_DATA_IMG: 'SET_DATA_IMG',
+};
+
+export default DIALOG_CONST;

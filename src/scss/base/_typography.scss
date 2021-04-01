@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Graphik;
+    src: url('../../assets/font-face/Graphik-400-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bauer Bodoni Std 1';
+    src: url('../../assets/font-face/BauerBodoniStd-Roman.otf') format('opentype');
+}
+
+.font-title {
+    font-family: 'Bauer Bodoni Std 1';
+}
+
+.font-weight-semi {
+    font-weight: 500 !important;
+}

@@ -1,0 +1,297 @@
+@import 'src/scss/utils/variable';
+
+.home-page {
+    .banner-session {
+        height: 100vh;
+
+        &:before {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(180deg, #ffffff -11.66%, rgba(200, 184, 170, 0) 98.47%);
+        }
+
+        .banner-title {
+            font-family: 'Bauer Bodoni Std 1';
+        }
+
+        .ant-carousel {
+            z-index: 2;
+            height: 100%;
+            .slick-slider,
+            .slick-list,
+            .slick-track {
+                height: 100%;
+            }
+            .slick-slide {
+                & > div {
+                    height: 100%;
+                    .img {
+                        top: 0;
+                        left: 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            @media screen and (max-width: $sm) {
+                .slick-dots {
+                    bottom: 12px !important;
+                }
+            }
+        }
+    }
+
+    .self-session {
+        .self-session-title {
+            height: 300px;
+            .title {
+                z-index: 1;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+        }
+        .trend-list {
+            margin-top: 120px;
+            margin-bottom: 100px;
+            .trend-item {
+                .content-wrapper {
+                    background: radial-gradient(50% 50% at 50% 50%, $cl_white 0%, $cl_white_smoke 100%);
+                    .content {
+                        padding: 80px 40px 40px 40px;
+                        z-index: 1;
+                        transition: 0.5s all;
+                        .trend-detail {
+                            padding-top: 50px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            transition: 0.5s all;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            &:hover {
+                                opacity: 1;
+                            }
+                            button {
+                                border: 1px solid $cl_nero;
+                                background: transparent;
+                                border-radius: 0;
+                                height: 40px;
+                                width: 130px;
+
+                                & > div {
+                                    padding-top: 3px;
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.trend-item-1 {
+                    .content-wrapper {
+                        background: transparent;
+                        .content {
+                            padding-bottom: 0;
+                            z-index: 1;
+                            transition: 0.5s all;
+                        }
+                    }
+                }
+                &.trend-item-3 {
+                    .content-wrapper {
+                        padding: 0;
+                        background: transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .content {
+                            z-index: 1;
+                            transition: 0.5s all;
+                            padding: 0;
+                            height: auto !important;
+                            width: auto !important;
+                            align-items: center !important;
+                            & > div:first-child {
+                                background: radial-gradient(50% 50% at 50% 50%, $cl_white 0%, $cl_white_smoke 100%);
+                            }
+                            .trend-detail {
+                                padding-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .descriptions {
+            margin-top: 120px;
+            .description-item {
+                margin: 0 auto;
+                max-width: 850px;
+            }
+        }
+    }
+
+    .own-design {
+        margin-left: -15px;
+        margin-right: -15px;
+        .own-design-item {
+            padding-left: 15px;
+            padding-right: 15px;
+            .img-wrapper {
+                .img {
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+            .btn-open-more {
+                min-width: 0;
+                background-color: transparent !important;
+
+                a {
+                    color: $cl_yuma;
+                }
+            }
+            @media screen and (max-width: $md) {
+                width: 100% !important;
+            }
+        }
+        .own-design-item-1 {
+            width: 40%;
+            .img-wrapper {
+                .img {
+                    bottom: -20px;
+                }
+            }
+        }
+        .own-design-item-0,
+        .own-design-item-2 {
+            width: 30%;
+            .img-wrapper {
+                .img {
+                    bottom: -30px;
+                }
+            }
+        }
+        @media screen and (min-width: $md) {
+            .own-design-item-0 {
+                position: relative;
+                top: 30px;
+            }
+            .own-design-item-2 {
+                position: relative;
+                top: 80px;
+            }
+        }
+    }
+
+    .latest-collection-wrapper {
+        .latest-collection {
+            margin-top: 340px;
+            margin-bottom: 100px;
+            background-color: $cl_yuma;
+
+            @media screen and (max-width: $md) {
+                margin-top: 50px;
+                margin-bottom: 0;
+            }
+
+            .content {
+                padding-top: 60px;
+                padding-bottom: 60px;
+                .btn-open-more {
+                    border-color: $cl_white !important;
+                    height: 40px !important;
+                    padding: 0 10px !important;
+                    min-width: 0;
+                }
+            }
+
+            .img-container {
+                margin-top: -200px;
+                margin-bottom: -100px;
+                .img {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: bottom;
+                }
+            }
+        }
+    }
+
+    .our-commitment-session {
+        padding-top: 140px;
+        .banner {
+            img {
+                width: 100%;
+            }
+        }
+        .commitment-item {
+            margin-top: 50px;
+            padding-left: 110px;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:before {
+                content: '';
+                height: 1px;
+                width: 80px;
+                background-color: $cl_nero;
+                position: absolute;
+                left: 0;
+                top: 26px;
+            }
+        }
+    }
+
+    .comments {
+        margin-top: 160px;
+        .comment-item-wrapper {
+            padding-top: 40px;
+        }
+        .comment-item {
+            background-color: $cl_snow_1;
+            padding-bottom: 200px;
+            .content-wrapper {
+                padding-top: 95px;
+                .content {
+                    max-width: 750px;
+                }
+                .sticker {
+                    top: -40px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: 100px !important;
+        li {
+            background-color: $cl_dark_gray;
+        }
+        .slick-active {
+            width: 60px !important;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -10px;
+                left: 0;
+                width: 100%;
+                height: 24px;
+                background: url('../../assets/img/icon/Close.png') no-repeat center;
+            }
+            button {
+                background-color: $cl_nero !important;
+            }
+        }
+    }
+}

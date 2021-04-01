@@ -1,0 +1,119 @@
+@import 'src/scss/utils/variable';
+
+.ant-modal-close {
+    width: 70px;
+    height: 70px;
+
+    .ant-modal-close-x {
+        margin: auto;
+    }
+}
+
+.login {
+    padding: 56px 0px 30px;
+
+    .login-title {
+        line-height: 24px;
+
+        margin-bottom: 9px;
+    }
+
+    .login-greeting {
+        font-weight: 700;
+        line-height: 34px;
+
+        margin-bottom: 24px;
+    }
+
+    .login-form {
+        padding: 0px 108px;
+        .login-label {
+            line-height: 24px;
+
+            &:last-of-type {
+                margin-top: 30px;
+            }
+        }
+        .login-input {
+            border: none;
+            border-bottom: 1px solid $cl_nero;
+
+            padding-bottom: 10px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $cl_dark_gray_1;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .login-forgot-password {
+            color: #616161;
+        }
+        .login-btn {
+            line-height: 20px;
+
+            min-height: 40px;
+            min-width: 230px;
+            margin: 30px 0px 32px;
+
+            background-color: $cl_yuma;
+            border: none;
+
+            transition: all 0.35s ease 0s;
+
+            &:hover {
+                background-color: $cl_gimblet;
+            }
+        }
+    }
+
+    .login-or {
+        line-height: 24px;
+
+        margin-bottom: 18px;
+    }
+
+    .login-nav {
+        margin-bottom: 55px;
+        .login-nav-btn {
+            border: none;
+            background-color: transparent;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .login-signup {
+        .login-signup-btn {
+            border: none;
+            background-color: transparent;
+
+            font-weight: 500;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        .login-form {
+            padding: 0px 100px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .login {
+        .login-form {
+            padding: 0px 25px;
+        }
+    }
+}

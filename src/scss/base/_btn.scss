@@ -1,0 +1,36 @@
+@import '../utils/variable';
+
+.btn-open-more {
+    background: $cl_yuma !important;
+    border-color: $cl_yuma !important;
+    min-width: 160px;
+    padding: 0 30px !important;
+    min-height: 45px !important;
+    text-align: center;
+    border-radius: 0 !important;
+    .text {
+        padding-top: 4px;
+    }
+    &.default {
+        background-color: transparent !important;
+    }
+    span {
+        padding-top: 4px;
+    }
+}
+
+.banner-btn {
+    border: 1px solid $cl_nero;
+    background: transparent;
+    border-radius: 0;
+    height: 45px;
+    min-width: 170px;
+    padding: 0 20px;
+    & > div {
+        padding-top: 3px;
+    }
+    &:hover,
+    &:focus {
+        background: transparent;
+    }
+}

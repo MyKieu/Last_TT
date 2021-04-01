@@ -1,0 +1,18 @@
+@import 'src/scss/utils/variable';
+
+.reviews-wrapper {
+    padding: 30px 30px 0 30px;
+    .reviews-list {
+        .review-item {
+            .img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: $cl_yuma;
+            }
+        }
+    }
+    @media screen and (max-width: $md) {
+        padding: 30px 0 0 0;
+    }
+}

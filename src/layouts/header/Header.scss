@@ -1,0 +1,77 @@
+@import 'src/scss/utils/variable';
+
+.header-session {
+    height: 120px;
+    z-index: 9999;
+    transition: 0.5s all;
+
+    &.not-at-top {
+        background: $cl_white;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+    }
+
+    .left-nav {
+        width: calc((100% - 120px) / 2);
+        .left-nav-item {
+            padding: 5px 7px;
+            border-radius: 17px;
+            transition: all 0.3s;
+            cursor: pointer;
+            &:hover {
+                background: $cl_snow;
+            }
+        }
+    }
+
+    .right-nav {
+        width: calc((100% - 120px) / 2);
+        .nav {
+            li {
+                margin-left: 30px;
+                a {
+                    text-decoration: none;
+                    color: $cl_black;
+                }
+            }
+        }
+    }
+}
+
+.side-bar {
+    .nav {
+        display: block;
+        li {
+            margin-top: 25px;
+            a {
+                color: $cl_nero;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    display: none !important;
+}
+
+@media screen and (max-width: 1230px) {
+    .desktop-menu {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: inline-block !important;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .side-bar {
+        .ant-drawer-content-wrapper {
+            width: 100% !important;
+            .nav {
+                li {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

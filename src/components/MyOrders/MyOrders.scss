@@ -1,0 +1,73 @@
+@import 'src/scss/utils/variable';
+
+.my-orders {
+  .my-orders-wrapper {
+    .my-orders_header {
+      .my-orders_sub-title {
+        line-height: 24px;
+      }
+      .my-orders_title {
+        line-height: 60px;
+      }
+    }
+    .ant-table-wrapper {
+      .ant-table {
+        min-width: 1078px;
+        th {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 26px 16px;
+          background-color: $cl_white;
+          border-bottom: 3px solid $cl_gimblet;
+        }
+        td {
+          color: $cl_dim_gray;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    .ant-pagination {
+      .ant-pagination-item {
+        margin-right: 0px !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          border-color: $cl_gimblet;
+        }
+
+        a {
+          color: $cl_dark_gray_1;
+        }
+      }
+      .ant-pagination-prev, .ant-pagination-next {
+        margin-right: 0px !important;
+
+        .ant-pagination-item-link {
+          color: $cl_dark_gray_1;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            border-color: $cl_gimblet;
+          }
+        }
+      }
+    }
+    .ant-pagination-item-active {
+      font-size: 14px;
+      border: 0;
+      background-color: $cl_gimblet;
+      
+      a {
+        color: $cl_white !important;
+      }
+    }
+  }
+}

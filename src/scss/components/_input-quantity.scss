@@ -1,0 +1,28 @@
+@import '../utils/variable';
+
+.input-quantity {
+    border: 1px solid $cl_nero !important;
+    height: 40px !important;
+    .ant-input-number-input {
+        height: 100%;
+    }
+    .ant-input-number-input-wrap {
+        height: 100%;
+        input {
+            height: 100%;
+            text-align: center;
+        }
+    }
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+}
+.btn-control {
+    background: $cl_yuma !important;
+    color: $cl_white;
+    height: 40px;
+    width: 40px;
+    svg {
+        font-size: 20px;
+    }
+}

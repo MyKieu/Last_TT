@@ -1,0 +1,14 @@
+.modal-btn {
+    cursor: pointer;
+}
+
+.auth-modal {
+    min-width: 600px;
+}
+
+@media (max-width: 1366px) {
+    .auth-modal {
+        min-width: unset;
+        min-height: unset;
+    }
+}

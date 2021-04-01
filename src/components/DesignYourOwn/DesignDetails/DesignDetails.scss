@@ -1,0 +1,10 @@
+@import '../../../scss/utils/variable';
+
+.design-details {
+    .right-col {
+        max-width: 600px;
+    }
+    .btn-continue {
+        border-color: $cl_yuma;
+    }
+}

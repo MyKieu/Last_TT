@@ -1,0 +1,19 @@
+.design-your-own {
+    .banner {
+        background: url('../../assets/img/design-your-own/design_your_own_bg.png') no-repeat center;
+        background-size: cover;
+        height: 400px;
+    }
+    .list-bag {
+        .bag-item {
+            .img-wrapper {
+                height: 400px;
+            }
+            &.highlight {
+                .content-wrapper {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}

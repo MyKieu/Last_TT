@@ -1,0 +1,56 @@
+@import 'src/scss/utils/variable';
+
+.news {
+  .container {
+    .news-intro-wrapper {
+      @media (max-width: 1200px) {
+        padding: 0px 0px 0px 10px !important;
+      }
+
+      @media (max-width: 992px) {
+        padding: 0px !important;
+      }
+
+      .news-intro_title {
+        line-height: 42px;
+
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      .news-intro_text {
+        line-height: 24px;
+      }
+    }
+  }
+  .container-fluid {
+    .news-discover_title {
+      @media (max-width: 576px) {
+        font-size: 38px;
+      }
+    }
+    .row {
+      a {
+        transition: all 0.35s ease 0s;
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .news-discover-item_title {
+          line-height: 24px;
+        }
+      }
+      .news-discover-btn {
+        min-width: 153px;
+        min-height: 40px;
+        line-height: 20px;
+        background-color: $cl_yuma !important;
+        border-color: $cl_yuma !important;
+
+        .text {
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+}

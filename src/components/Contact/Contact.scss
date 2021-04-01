@@ -1,0 +1,50 @@
+@import 'src/scss/utils/variable';
+
+.contact {
+  .contact-title {
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+    }
+  }
+  .contact-info {
+    min-height: 612px;
+  }
+  .contact-form {
+    padding-left: 80px !important;
+    
+    @media (max-width: 992px) {
+      padding-left: 0px !important;
+    }
+  }
+  .contact-form-group {
+    // border-bottom: 1px solid $cl_nero;
+
+    input {
+      border: none;
+      border-bottom: 1px solid $cl_nero;
+      outline: none !important;
+    }
+    &:nth-child(3) {
+      border: none;
+    }
+
+    textarea {
+      padding: 20px 25px;
+      border: 1px solid $cl_nero !important;
+      resize: none;
+      outline: none;
+    }
+  }
+  .contact-btn {
+    min-width: 162px;
+    min-height: 40px;
+    line-height: 20px;
+    background-color: $cl_yuma !important;
+    border: none !important;
+    outline: none !important;
+  }
+}

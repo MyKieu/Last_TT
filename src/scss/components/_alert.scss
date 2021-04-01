@@ -1,0 +1,13 @@
+@import '../../scss/utils/variable';
+
+.alert-add-to-cart-success {
+    background: $cl_atlantis;
+    padding: 25px 20px;
+    .ant-notification-notice-message {
+        margin-bottom: 5px;
+    }
+    .ant-notification-notice-close {
+        top: 8px;
+        right: 10px;
+    }
+}

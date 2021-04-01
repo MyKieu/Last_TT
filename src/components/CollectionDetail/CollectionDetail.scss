@@ -1,0 +1,230 @@
+@import 'src/scss/utils/variable';
+
+.cltd {
+    .cltd-hero {
+        .cltd-banner-container {
+            background-color: $cl_snow_1;
+
+            @media (max-width: 1199.98px) {
+                padding-top: 80px;
+            }
+
+            .row {
+                min-height: 670px;
+
+                @media (max-width: 1199.98px) {
+                    min-height: unset;
+                }
+
+                .cltd-banner-img-container {
+                    @media (max-width: 1199.98px) {
+                        min-height: 600px;
+                    }
+
+                    @media (max-width: 575.98px) {
+                        min-height: 500px;
+                    }
+
+                    .cltd-banner-img {
+                        &:first-child {
+                            top: 20px;
+                            left: 20px;
+
+                            @media (max-width: 1199.98px) {
+                                left: 40%;
+                                transform: translateX(-50%);
+                            }
+
+                            @media (max-width: 991.98px) {
+                                max-width: 70%;
+                            }
+                        }
+
+                        &:last-child {
+                            top: 150px;
+                            left: 240px;
+
+                            @media (max-width: 1199.98px) {
+                                left: 60%;
+                                transform: translateX(-50%);
+                            }
+
+                            @media (max-width: 991.98px) {
+                                max-width: 85%;
+                            }
+                        }
+                    }
+                }
+
+                .cltd-title {
+                    line-height: 24px;
+                    margin-bottom: 32px;
+                }
+
+                .cltd-subtitle {
+                    font-weight: 700;
+                    line-height: 60px;
+                    max-width: 387px;
+
+                    @media (max-width: 1199.98px) {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+        .cltd-letter-container {
+            position: relative;
+            min-height: 400px;
+
+            @media (max-width: 1199.98px) {
+                position: static;
+            }
+
+            .cltd-letter {
+                max-width: 637px;
+                min-height: 644px;
+                background-color: $cl_white;
+                padding: 75px 70px 65px;
+
+                position: absolute;
+                top: -220px;
+                right: 180px;
+
+                @media (max-width: 1199.98px) {
+                    position: static;
+                    max-width: unset;
+                    min-height: unset;
+                    padding: 75px 0px 65px;
+                }
+
+                .cltd-letter-content {
+                    @media (max-width: 1199.98px) {
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+
+    // Custom Tabpane antd
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: $cl_nero;
+    }
+    .ant-tabs-tab-btn:focus {
+        color: $cl_nero;
+    }
+    .ant-tabs-tab:hover {
+        color: $cl_nero;
+    }
+    .ant-tabs-ink-bar {
+        background-color: $cl_nero;
+    }
+
+    .cltd-tabs {
+        padding-top: 110px;
+
+        @media (max-width: 1199.98px) {
+            padding-top: 0px;
+        }
+
+        .cltd-tab-item {
+            margin-bottom: 120px;
+
+            @media (max-width: 575.98px) {
+                margin-bottom: 60px;
+            }
+
+            .cltd-tab-content {
+                top: 100px;
+
+                @media (max-width: 1199.98px) {
+                    top: 0px;
+                    margin-top: 30px;
+                }
+
+                .cltd-tab-title {
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    line-height: 42px;
+
+                    @media (max-width: 1199.98px) {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .cltd-tab-desc {
+                    line-height: 24px;
+                }
+            }
+        }
+
+        // Custom carousel antd
+        .ant-carousel .slick-dots {
+            margin-bottom: 0px;
+        }
+
+        .ant-carousel .slick-dots-bottom {
+            bottom: 126px;
+        }
+
+        .ant-carousel .slick-dots li {
+            height: 1px;
+            width: 20px;
+
+            &.slick-active {
+                width: 60px;
+            }
+        }
+
+        .ant-carousel .slick-dots li.slick-active {
+            position: relative;
+            overflow: unset;
+
+            // Render X icon
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 22px;
+                height: 1px;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+                background-color: $cl_nero;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 22px;
+                height: 1px;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%) rotate(-45deg);
+                background-color: $cl_nero;
+            }
+        }
+
+        .ant-carousel .slick-dots li.slick-active button {
+            background-color: $cl_nero;
+        }
+
+        .ant-carousel .slick-dots li button {
+            background-color: $cl_dark_gray;
+            height: 1px;
+        }
+
+        .cltd-slide-item {
+            img {
+                @media (max-width: 1199.98px) {
+                    max-width: 53%;
+                }
+
+                @media (max-width: 991.98px) {
+                    max-width: 45%;
+                }
+            }
+        }
+    }
+}
